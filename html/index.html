@@ -27,6 +27,15 @@
   
   <link rel="stylesheet" type="text/css" href="../assets/css/topbar.virtual.css">
 </head>
+	
+	<style>
+  .img-place img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+	
 <body class="theme-orange">
   
   <!-- Back to top button -->
@@ -104,45 +113,44 @@
     </div>
 	  
 	    <!-- Portfolio page -->
-  <div class="vg-page page-portfolio" id="portfolio">
-    <div class="container">
-      <div class="text-center wow fadeInUp">
-        <div class="badge badge-subhead">Portfolio</div>
-      </div>
-      <h1 class="text-center fw-normal wow fadeInUp">Latest Projects</h1>
-
-      <div class="gridder my-3">
-		  
-		  		  <div class="grid-item template wireframes wow zoomIn">
-          <div class="img-place" data-src="../assets/img/work/PreviewImage.png" data-fancybox data-caption="<h5 class='fg-theme'>>Storm's Echo<</h5> <p>PC, Tower Defence & Base Management</p>">
-            <img src="../assets/img/work/PreviewImage.png" alt="" class="unity"><br>
-<br>
-            <div class="img-caption">
-              <h5 class="fg-theme"> Storm's Echo</h5>
-              <p>Vision Keeper, game design, C# Coding</p>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item apps wow zoomIn unity">
-          <div class="img-place" data-src="../assets/img/work/Abeecalpyse00.png" data-fancybox data-caption="<h5 class='fg-theme'>>A<strong>BEE</strong>CALYPSE<</h5> <p>Mobile, Android</p>">
-            
-			  <a href="../html/portfolio-Abeecalypse.html"> <img src="../assets/img/work/AbeeCalypse.png" width="311" height="662" alt=""> </a>
-            <div class="img-caption">
-              <h5 class="fg-theme">A<strong>BEE</strong>CALYPSE</h5>
-              <p>Game design &amp; C# coding in unity</p>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item template wireframes wow zoomIn">
-          <div class="img-place" data-src="../assets/img/work/UGR/UGR_0.png" data-fancybox data-caption="<h5 class='fg-theme'>>Underground Rootine<</h5> <p>Browser Game</p>">
-            <img src="../assets/img/work/UGR/UGR_0.png" alt="" class="tabletop">
-            <div class="img-caption">
-              <h5 class="fg-theme"> Underground Rootine - Browser Game</h5>
-              <p>Programming (C#), Particle effects, Balancing</p>
-            </div>
-          </div>
-        </div>
-  </div> <!-- End Portfolio page -->
+<div class="vg-page page-portfolio" id="portfolio">
+  <div class="container">
+    <div class="text-center wow fadeInUp">
+      <div class="badge badge-subhead">Portfolio</div>
+    </div>
+    <h1 class="text-center fw-normal wow fadeInUp">Latest Projects</h1>
+    <div class="gridder my-3">
+				<div class="grid-item template wireframes wow zoomIn">
+		  <div class="img-place" data-src="../assets/img/work/PreviewImage.png" data-caption="<h5 class='fg-theme'>Storm's Echo</h5><p>PC, Tower Defence &amp; Base Management</p>">
+			<a href="../html/portfolio-StormsEcho.html"><img src="../assets/img/work/PreviewImage.png" alt="" class="unity"></a><br><br>
+			<div class="img-caption">
+			  <h5 class="fg-theme">Storm's Echo</h5>
+			  <p>Vision Keeper, game design, C# Coding</p>
+			</div>
+		  </div>
+		</div>
+			  <div class="grid-item apps wow zoomIn unity">
+		  <div class="img-place" data-src="../assets/img/work/Abeecalpyse00.png" data-caption="<h5 class='fg-theme'>A<strong>BEE</strong>CALYPSE</h5><p>Mobile, Android</p>">
+			<a href="../html/portfolio-Abeecalypse.html"><img src="../assets/img/work/AbeeCalypse.png" width="311" height="662" alt=""></a>
+			<div class="img-caption">
+			  <h5 class="fg-theme">A<strong>BEE</strong>CALYPSE</h5>
+			  <p>Game design &amp; C# coding in Unity</p>
+			</div>
+		  </div>
+		</div>
+		<div class="grid-item template wireframes wow zoomIn">
+		  <div class="img-place" data-src="../assets/img/work/UGR/UGR_0.png" data-caption="<h5 class='fg-theme'>Underground Rootine</h5><p>Browser Game</p>">
+			<a href="../html/portfolio-UndergroundRootine.html"><img src="../assets/img/work/UGR/UGR_0.png" alt="" class="tabletop"></a>
+			<div class="img-caption">
+			  <h5 class="fg-theme">Underground Rootine - Browser Game</h5>
+			  <p>Programming (C#), Particle effects, Balancing</p>
+			</div>
+		  </div>
+		</div>
+    </div>
+  </div>
+</div>
+		<!-- End Portfolio page -->
 	      <div class="text-center wow fadeInUp">
         <a href="https://www.tughan.de/html/portfolio-main.html" class="btn btn-theme"  >Load More </a>
 			  
@@ -200,8 +208,9 @@
 				<div class="details">
                 	<h5><a href="../html/portfolio-UndergroundRootine.html">Underground Rootine - Global Game Jam</a>&nbsp;</h5>
                 	<small class="fg-theme">GGJ23 </small>
-                	<p>Responsible as a programmer for the spawn and wave mechanic in the GGJ videogame "Underground Rootine". <br>
-					<br>Tags: Unity, C#, Videogame, Global Game Jam</p>
+					<ul>
+  					<li>Responsible as a programmer for the spawn and wave mechanic in the GGJ videogame "Underground Rootine". </li> </ul>
+					<br>Tags: Unity, C#, Videogame, Global Game Jam
               </div>
 			 </li>
 			  
@@ -210,18 +219,29 @@
               <div class="details">
                 <h5>Programming intern at Fraunhofer IPK&nbsp;</h5>
                 <small class="fg-theme">Fraunhofer IPK </small>
-                <p>Worked on unannounced, shipped industry VR software. "Extended reality development for use cases in industry"<br>
+                <p><ul>
+  <li>Development of virtual reality software prototypes in Unity according to requirements and specifications for industrial use.</li>
+  <li>Improvement of existing software and adaptation to new requirements in C#.</li>
+  <li>Independent work and contribution of own ideas.</li>
+  <li>Familiarization with application-oriented research.</li>
+  <li>Collaboration in an interdisciplinary team using agile methods.</li>
+</ul>
 <br>Tags: Unity, C#, UI, Data import/export, Gitlab, Scrum</p>
               </div>
             </li>
 			  
 			  
-			  			   <li>
+			<li>
               <div class="details">
                 <h5>Programming intern at <a href="https://www.zocklabs.de/">Zockrates Labs</a>&nbsp;</h5>
                 <small class="fg-theme">Zockrates Laboratories UG</small>
-                <p>Contribution to the development on the upcoming video game <a href="https://store.steampowered.com/app/1002260/Ruffy_and_the_Riverside/"> "Ruffy and the Riverside"</a><br><br>
-Tags: Unity, C#, Gameplay programming, VFX, Git, ...</p>
+                
+				  <ul>
+				<li>Contribution to the development on the upcoming video game <a href="https://store.steampowered.com/app/1002260/Ruffy_and_the_Riverside/"> "Ruffy and the Riverside"</a></li>
+				<li>Implementation of gameplay and logic elements in the Unity environment using C#.</li>
+				<li>Creation of dynamic particle effects to improve the visual quality of the game.</li>
+				  </ul>
+				Tags: Unity, C#, Gameplay programming, VFX, Git, ...
               </div>
             </li>
 			  
@@ -254,10 +274,16 @@ Tags: Unity, C#, Gameplay programming, VFX, Git, ...</p>
             <li>
               <div class="title">2019</div>
               <div class="details">
-                <h5>Internship at KPMG</h5>
-                <small class="fg-theme">KPMG</small>
-                <p>CIO Advisiory Intern at KPMG Germany</p>
-				  <a href="../assets/KPMG_TughanOzer.pdf" class="btn btn-theme-outline" download="CV_TughanÖzer.pdf">Download PDF [GER]</a>
+		<h5>Internship at KPMG</h5>
+		<small class="fg-theme">KPMG</small>
+		<ul>
+		  <li>Development of a procedure model for evaluating Java applications.</li>
+		  <li>Conducted qualitative and quantitative analyses, such as checking the licensing requirements of installed Java applications.</li>
+		  <li>Supported the project using analysis tools such as MS Excel and development languages including Java.</li>
+		  <li>Created slides.</li>
+		</ul>
+		<br>
+		<a href="../assets/KPMG_TughanOzer.pdf" class="btn btn-theme-outline" download="CV_TughanÖzer.pdf">Download PDF [GER]</a>
               </div>
             </li>
           </ul>
