@@ -26,6 +26,8 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/virtual.css">
   
   <link rel="stylesheet" type="text/css" href="../assets/css/topbar.virtual.css">
+	
+	<link rel="stylesheet" href="../assets/css/tags.css">
 </head>
 	
 	<style>
@@ -43,7 +45,7 @@
     <span class="ti-arrow-up"></span>
   </div>
   
-  <div class="vg-page page-home" id="home" style="background-image: url(../assets/img/Bg_Code2.png)">
+  <div class="vg-page page-home" id="home" style="background-image: url(../assets/img/Bg_Code.png)">
   <!-- Navbar -->
   <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
     <div class="container">
@@ -57,11 +59,13 @@
             <a href="#about" class="nav-link" data-animate="scrolling">About</a>
           </li>
           <li class="nav-item">
-            <a href="../html/portfolio-main.html" class="nav-link">Game Design Portfolio</a>
+            <a href="../html/portfolio-main.html" class="nav-link">Software Portfolio</a>
           </li>
-          <li class="nav-item">
+          <!--
+<li class="nav-item">
             <a href="" class="nav-link">3D Modeling Portfolio</a>
           </li>
+-->
           <li class="nav-item">
             <a href="#contact" class="nav-link" data-animate="scrolling">Contact</a>
           </li>
@@ -80,11 +84,13 @@
   </div>
 	<!-- End Navbar -->
     <!-- Caption header -->
+
 <div class="caption-header text-center wow zoomInDown">
-  <h1 class="fw-normal">Hey!</h1>
+  <h1 class="fw-normal">Hello World!</h1>
   <h1 class="fw-light mb-4">My name is <b class="fg-theme">Tughan</b></h1>
-  <div class="badge">Game Designer</div>
-</div> <!-- End Caption header -->
+  <div class="badge">Software Developer</div>
+</div> 
+	  <!-- End Caption header -->
 </div>
 <div class="floating-button"><span class="ti-mouse"></span></div>
 
@@ -99,11 +105,11 @@
       <div class="col-lg-6 offset-lg-1 wow fadeInRight">
         <h1 class="fw-light">Tughan Özer</h1>
         <h5 class="fg-theme mb-3">Game Designer</h5>
-        <p class="text-muted">Game Design student with experience in a variety of programming languages and software.</p>
+        <p class="text-muted">Software Developer with experience in a variety of programming languages and software.</p>
         <ul class="theme-list">
           <li><b>From:</b> Stuttgart, Germany</li>
           <li><strong>Degree: </strong>Bachelor of Arts in Game Design</li>
-          <li><strong>Job title:</strong> Software developer with experience in Unity (C#)&nbsp;</li>
+          <li><strong>Job title:</strong> Software developer with experience in C# and Unity&nbsp;</li>
         </ul>
         <a href="../assets/CV_TughanÖzer.pdf" class="btn btn-theme-outline" download="CV_TughanÖzer.pdf">Download CV</a>
       </div>
@@ -128,15 +134,6 @@
 			</div>
 		  </div>
 		</div>
-			  <div class="grid-item apps wow zoomIn unity">
-		  <div class="img-place" data-src="../assets/img/work/Abeecalpyse00.png" data-caption="<h5 class='fg-theme'>A<strong>BEE</strong>CALYPSE</h5><p>Mobile, Android</p>">
-			<a href="../html/portfolio-Abeecalypse.html"><img src="../assets/img/work/AbeeCalypse.png" width="311" height="662" alt=""></a>
-			<div class="img-caption">
-			  <h5 class="fg-theme">A<strong>BEE</strong>CALYPSE</h5>
-			  <p>Game design &amp; C# coding in Unity</p>
-			</div>
-		  </div>
-		</div>
 		<div class="grid-item template wireframes wow zoomIn">
 		  <div class="img-place" data-src="../assets/img/work/SRL/SRL_0.jpg" data-caption="<h5 class='fg-theme'>Sorrowland</h5><p>Browser Game</p>">
 			<a href="../html/portfolio-SorrowLand.html"><img src="../assets/img/work/SRL/SRL_0.jpg" alt="" class="PointAndClick"></a>
@@ -146,6 +143,16 @@
 			</div>
 		  </div>
 		</div>
+					  <div class="grid-item apps wow zoomIn unity">
+		  <div class="img-place" data-src="../assets/img/work/Abeecalpyse00.png" data-caption="<h5 class='fg-theme'>A<strong>BEE</strong>CALYPSE</h5><p>Mobile, Android</p>">
+			<a href="../html/portfolio-Abeecalypse.html"><img src="../assets/img/work/AbeeCalypse.png" width="311" height="662" alt=""></a>
+			<div class="img-caption">
+			  <h5 class="fg-theme">A<strong>BEE</strong>CALYPSE</h5>
+			  <p>Game design &amp; C# coding in Unity</p>
+			</div>
+		  </div>
+		</div>
+		
     </div>
   </div>
 </div>
@@ -199,9 +206,13 @@
           </ul>
         </div>
         <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
-          <h2 class="fw-normal">Experience</h2>
+          <h2 class="fw-normal">Experience and Projects</h2>
           <ul class="timeline mt-4 pr-md-5">
             
+			  			 <li>
+              <div class="title">2024</div>
+			  </li>
+			  
 			 <li>
               <div class="title">2023</div>
 			  </li>
@@ -212,7 +223,13 @@
                 	<small class="fg-theme">LD54 </small>
 					<ul>
   					<li>Responsible as a programmer for parts of the round management, character movement, scene and enemy placement in the LD54 videogame "Blade Stalker". </li> </ul>
-					<br>Tags: Unity, C#, Videogame, Git, Ludum Dare 54, GameJam
+					<div class="tags">
+					<span class="tag">Unity</span>
+					<span class="tag">C#</span>
+					<span class="tag">Git</span>
+					<span class="tag">Ludum Dare 54</span>
+					<span class="tag">GameJam</span>
+					</div>
               </div>
 			 </li>
 			  
@@ -222,7 +239,13 @@
                 	<small class="fg-theme">LD53 </small>
 					<ul>
   					<li>Responsible as a programmer for the character movement, scenes and dialog-windows in the LD53 videogame "Sorrowland". </li> </ul>
-					<br>Tags: Unity, C#, Videogame, Git, Ludum Dare 53, GameJam
+					<div class="tags">
+					<span class="tag">Unity</span>
+					<span class="tag">C#</span>
+					<span class="tag">Git</span>
+					<span class="tag">Ludum Dare 53</span>
+					<span class="tag">GameJam</span>
+						</div>
               </div>
 			 </li>
 			  
@@ -232,7 +255,12 @@
                 	<small class="fg-theme">GGJ23 </small>
 					<ul>
   					<li>Responsible as a programmer for the spawn and wave mechanic in the GGJ videogame "Underground Rootine". </li> </ul>
-					<br>Tags: Unity, C#, Videogame, Global Game Jam
+					    <div class="tags">
+      <span class="tag">Unity</span>
+      <span class="tag">C#</span>
+      <span class="tag">Videogame</span>
+      <span class="tag">Global Game Jam</span>
+    </div>
               </div>
 			 </li>
 			  
@@ -248,7 +276,15 @@
   <li>Familiarization with application-oriented research.</li>
   <li>Collaboration in an interdisciplinary team using agile methods.</li>
 </ul>
-<br>Tags: Unity, C#, UI, Data import/export, Gitlab, Scrum</p>
+				  <div class="tags">
+					<span class="tag">Unity</span>
+					<span class="tag">C#</span>
+					<span class="tag">UI</span>
+					<span class="tag"> Data import/export</span>
+					<span class="tag">Gitlab</span>
+					<span class="tag">Scrum</span>
+				  </div>
+				  </p>
               </div>
             </li>
 			  
@@ -263,7 +299,15 @@
 				<li>Implementation of gameplay and logic elements in the Unity environment using C#.</li>
 				<li>Creation of dynamic particle effects to improve the visual quality of the game.</li>
 				  </ul>
-				Tags: Unity, C#, Gameplay programming, VFX, Git, ...
+				  <div class="tags">
+				  	<span class="tag">Unity</span>
+					<span class="tag">C#</span>
+					<span class="tag">UI</span>
+					<span class="tag">Gameplay programming</span>
+					<span class="tag">VFX</span>
+					<span class="tag">Git</span>
+				  </div>
+				  
               </div>
             </li>
 			  
