@@ -44,7 +44,6 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a href="../html/index.html" class="nav-link">About</a></li>
           <li class="nav-item"><a href="../html/portfolio-main.html" class="nav-link">Software Portfolio</a></li>
-          </li>
 		  <li class="nav-item">
             <a href="" class="nav-link">3D Modelling Portofolio</a>
           </li>
@@ -63,10 +62,8 @@
   </div>
 	  
  <br>
-
-	
 	<br>
-<br
+<br>
 
 <div class="col-lg-10 offset-lg-1 wow fadeInUp"> 
     <h1 class="fw-light"><strong>Gamified Peer-to-Peer Foodsharing App [Bachelor Thesis]</strong></h1>
@@ -82,40 +79,80 @@
     <div class="mt-4">
       <p>This mobile application was developed as the practical component of my Bachelor thesis. It focuses on combining gamification elements with a functional peer-to-peer platform to reduce food waste.</p>
       
-      <p><strong>Technical Stack:</strong> C#, Unity Engine, Real-time Networking (Photon/PUN2), Android SDK</p>
+      <p><strong>Technical Stack:</strong> C#, Unity Engine, Real-time Networking (Netcode for GameObjects (NGO)), Android SDK</p>
       <p><strong>Role:</strong> Lead Developer (Software Architecture, Networking Logic, UI/UX)</p>
       
       <h5 class="fg-theme">Technical Highlights:</h5>
       <ul>
-        <li><strong>Software Architecture:</strong> Designed a modular C# system to handle user data, rewards, and item states efficiently.</li>
-        <li><strong>Networking & Synchronization:</strong> Implemented real-time data synchronization for peer-to-peer interactions, focusing on low-latency updates and state consistency.</li>
-        <li><strong>UI/UX Framework:</strong> Developed a scalable UI system in Unity, including a custom style guide for a consistent user experience.</li>
-        <li><strong>Source Code:</strong> Managed the project via Git, focusing on clean separation of concerns between game logic and networking layers.</li>
+        <li><strong>Networking & Synchronization:</strong> Implemented server-authoritative logic using RPCs and NetworkVariables.</li>
+        <li><strong>Software Architecture:</strong> Designed a modular hub (OnlineManager) for real-time user interactions.</li>
+        <li><strong>UI/UX Framework:</strong> Created a scalable UI system in Unity.</li>
       </ul>
 
+      <div class="mt-4">
+          <h5 class="fg-theme">Key Technical Implementation:</h5>
+          <p>The <strong>OnlineManager</strong> serves as the central hub for synchronized user interactions. It demonstrates proficiency in:</p>
+          <ul>
+              <li><strong>Server-Authoritative Logic:</strong> Ensuring data integrity during item swaps and XP distribution.</li>
+              <li><strong>State Synchronization:</strong> Using <code>NetworkVariables</code> for real-time consistency across all clients.</li>
+              <li><strong>Targeted RPCs:</strong> Optimizing network traffic by sending data packets only to relevant clients.</li>
+          </ul>
+          <a href="https://github.com/TughanOzer/Food-Sharing-Platform-Prototyp" class="btn btn-theme" target="_blank">View Project on GitHub</a>
+
+          <a href="https://github.com/TughanOzer/Food-Sharing-Platform-Prototyp/blob/main/Assets/OnlineManager.cs" 
+             class="btn btn-theme" target="_blank">View Networking Architecture (C#)</a>
+      </div>
       <br>
-      <a href="https://github.com/TughanOzer/Food-Sharing-Platform-Prototyp" class="btn btn-theme" target="_blank">View Project on GitHub</a>
-      <a href="https://github.com/TughanOzer/Food-Sharing-Platform-Prototyp/blob/main/Assets/OnlineManager.cs" class="btn btn-theme-outline" target="_blank">View Networking Logic (C#)</a>
       <a href="../assets/img/work/FDSH/FoodSharingPlattformPrototyp.apk" class="btn btn-theme-outline" download>Download .apk</a>
     </div>
 </div>
-	
-	 <div class="row">
-		 
-  <div class="column"> &nbsp; &nbsp;
-		 <img src="../assets/img/work/FDSH/2.jpg" alt="" style="width:40%">
-	  <img src="../assets/img/work/FDSH/3.jpg" alt="" style="width:40%">
-</div>
-		   <div class="column"> &nbsp; &nbsp;
-		 <img src="../assets/img/work/FDSH/0.png" alt="" style="width:25%">
-	  <img src="../assets/img/work/FDSH/1.png" alt="" style="width:25%">
-</div>
-		 
-		 		   <div class="column"> &nbsp; &nbsp;
-		 <img src="../assets/img/work/FDSH/4.png" alt="" style="width:40%">
-	  <img src="../assets/img/work/FDSH/5.png" alt="" style="width:40%">
-			   <img src="../assets/img/work/FDSH/6.jpg" alt="" style="width:40%">
-</div>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      
+      <div class="col-md-4 col-sm-6 mb-4 wow fadeInUp">
+        <div class="img-place custom-img-container">
+          <img src="../assets/img/work/FDSH/2.jpg" alt="App UI 1" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="100ms">
+        <div class="img-place custom-img-container">
+          <img src="../assets/img/work/FDSH/3.jpg" alt="App UI 2" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="200ms">
+        <div class="img-place custom-img-container">
+          <img src="../assets/img/work/FDSH/0.png" alt="App UI 3" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-4 wow fadeInUp">
+        <div class="img-place custom-img-container">
+          <img src="../assets/img/work/FDSH/1.png" alt="App UI 4" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="100ms">
+        <div class="img-place custom-img-container">
+          <img src="../assets/img/work/FDSH/4.png" alt="App UI 5" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-4 wow fadeInUp" data-wow-delay="200ms">
+        <div class="img-place custom-img-container">
+          <img src="../assets/img/work/FDSH/5.png" alt="App UI 6" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 mb-4 wow fadeInUp">
+        <div class="img-place custom-img-container">
+          <img src="../assets/img/work/FDSH/6.jpg" alt="App UI 7" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+
+    </div>
+  </div>
 		 
 
   <div class="column"> </div>
